@@ -29,9 +29,9 @@ jobs:
         with:
           java-version: 11
       - name: Gradle
-        uses: Raul6469/android-gradle-action@2.0.0
+        uses: OrangeLabs-moe/gradle-actions@v5.0-openjdk-11
         with:
-          script: clean build
+          args: clean build
   deploy:
     runs-on: ubuntu-latest
     needs: [build]
