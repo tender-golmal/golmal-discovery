@@ -42,5 +42,6 @@ jobs:
         with:
           context: ./
           file: ./Dockerfile
-          push: true
           tags: golmal/discovery:latest
+          load: true
+      - run: docker push golmal/discovery:latest
