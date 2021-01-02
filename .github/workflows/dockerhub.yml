@@ -43,6 +43,3 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: golmal/discovery:$GITHUB_RUN_NUMBER
-          builder: ${{ steps.buildx.outputs.name }}
-          cache-from: type=local,src=/tmp/.buildx-cache
-          cache-to: type=local,dest=/tmp/.buildx-cache
