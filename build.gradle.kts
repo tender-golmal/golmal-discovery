@@ -25,6 +25,7 @@ repositories {
 extra["springCloudVersion"] = "2020.0.0"
 
 dependencies {
+	implementation("org.springframework.cloud:spring-cloud-starter-bootstrap")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
